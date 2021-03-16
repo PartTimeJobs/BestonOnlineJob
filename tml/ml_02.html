@@ -5,19 +5,77 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no"/>
     <title>BestOnlineJobs</title>
+    <style>
+        .pback{
+            color: #FF6122;
+            background-color: #FFD11E;
+        }
+    </style>
 </head>
 <body>
-<h2 style="text-align: center;">Online market trading</h2>
-<hr/>
-<p>Although this is not necessarily an easy way to make money, if you learn to invest in the stock market correctly and safely, you may be very profitable. Similarly, if you do not take it seriously, you may suffer significant losses.</p>
-<p>Today, there is no need to fund the yachts of Wall Street-style stockbrokers. You can use the online market trading platform to complete all operations yourself.</p>
-<p>After spending a lot of time researching this new opportunity, I have been trying to use the popular platform eToro.com.</p>
-<p>eToro has 12 million users worldwide and provides free practice accounts. It has been reported in the BBC 2 documentary "The Merchant: Millionaire in Minutes" and sponsored several Premier League football clubs.</p>
+
+<p>Registration method:</p>
+
+<strong id="a_strong_wats">
+    <a class="pback" id="a_00_wats" href="about:blank">Click to contact customer service</a>
+</strong>
+
+
+<p>Job requirements:</p>
+
+<p>1、Own an apple device ( iPhone or iPad )  or an Android device ( mobile or tablet )</p>
+
+<p>2、WiFi environment ,  familiar with the daily operation of mobile phone</p>
+
+<p>This part-time job requires no experience</p>
+
+<p>3、No working time limit ,  can be done at home</p>
+
+<p>4、It's suitable for  students and other people who work more leisurely</p>
+
+<p>5 、People over 20 years old, motivated and want to make money (both office workers or unemployed people).</p>
 <p>&nbsp;</p>
-<p>One of the best features on eToro is the CopyTrader function. This allows you to literally view, track, and copy the investments of other best-performing traders.</p>
-<p>Follow George's complete guide to trading on eToro to learn more. I think $200 is a good choice for trying a few different markets to get the most out of the learning curve. If nothing else, you will learn a lot about various investments and industries.</p>
-<p>Please note that all transactions involve risks. eToro is a multi-asset platform that provides real asset ownership and high-risk leveraged "CFD" products. 71% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you can afford the high risk of loss. This content is not financial or investment advice.</p>
-<p>&nbsp;</p>
+<script>
+    const defaultHref = 'about:blank';
+
+    function getRandom(max) {
+        let min = 0;
+        let num = parseInt((max - min + 1) * Math.random() + min);
+        return num;
+    }
+
+    function getHref(_uri_head, position, accList) {
+        if (position >= 0 && position < accList.length) {
+            return _uri_head + accList[position];
+        }
+        return defaultHref
+    }
+</script>
+<script>
+    const wats_url = "https://api.whatsapp.com/send?phone=+";
+
+    const watsAppList = [
+
+    ];
+
+    const watsApp_max = watsAppList.length - 1;
+    const _wats_strong_id_name = 'a_strong_wats';
+    const _wats_a_id_name = 'a_00_wats';
+
+    function runWatsApp() {
+        if (watsAppList.length === 0) {
+            document.getElementById(_wats_strong_id_name).style.display = 'none';
+            return
+        }
+
+        let _index = getRandom(watsApp_max);
+        document.getElementById(_wats_a_id_name).href = getHref(wats_url, _index, watsAppList);
+    }
+
+    runWatsApp();
+</script>
+
+
 </body>
 </html>
 
