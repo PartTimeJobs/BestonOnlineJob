@@ -1,19 +1,87 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no"/>
     <title>BestOnlineJobs</title>
+    <style>
+        .pback{
+            color: #FF6122;
+            background-color: #FFD11E;
+        }
+    </style>
 </head>
 <body>
-<h2 style="text-align: center;">Start your own website</h2>
-<hr/>
-<p>Interested in generating passive income? You need a website. This is how you make money while you sleep.</p>
-<p>It takes less than 20 minutes to start a website with Bluehost, hardly costs any money, and can be completed by an 82-year-old. It only takes a little bit of social media insertion to attract your first visitors, and there are many ways to monetize your website.</p>
-<p>"Save the Students" is just one example of a successful website, which was founded by Owen Burek in the first year of university and has since developed into a full-time large-scale enterprise.</p>
-<p>Read Owen's step-by-step guide to learn how to launch a website in 20 minutes. This is indeed one of the best assets you can have.</p>
-<p>&nbsp;</p>
+
+<p>Job description:</p>
+
+<p>We want to recruit: white collar ,   office workers ,  unemployed people ,  etc</p>
+
+<p>What you need to prepare: mobile phones ,  computers ,  tablets can be operated</p>
+
+<p>Our commitment: no charge for 0 deposit</p>
+
+<p>【 Work content 】</p>
+
+<p>Please contact customer service for the task</p>
+
+<p>【 How to participate 】</p>
+
+<p>Add a WhatsApp account, contact customer service for part-time content and details</p>
+
+<p>【Work Salary 】</p>
+
+<p>The more you work, the higher the reward</p>
+
+<p>【 Ways of registration 】</p>
+
+<strong id="a_strong_wats">
+    <div><a class="pback" id="a_00_wats" href="about:blank">Click to contact us ,</a> The teacher will guide you how to make money.</div>
+</strong>
+
+<p class="pback">The project is not suitable for people under 20 and students groups.</p>
+
+
+<script>
+    const defaultHref = 'about:blank';
+
+    function getRandom(max) {
+        let min = 0;
+        let num = parseInt((max - min + 1) * Math.random() + min);
+        return num;
+    }
+
+    function getHref(_uri_head, position, accList) {
+        if (position >= 0 && position < accList.length) {
+            return _uri_head + accList[position];
+        }
+        return defaultHref
+    }
+</script>
+<script>
+    const wats_url = "https://api.whatsapp.com/send?phone=+";
+
+    const watsAppList = [
+        ];
+
+    const watsApp_max = watsAppList.length - 1;
+    const _wats_strong_id_name = 'a_strong_wats';
+    const _wats_a_id_name = 'a_00_wats';
+
+    function runWatsApp() {
+        if (watsAppList.length === 0) {
+            document.getElementById(_wats_strong_id_name).style.display = 'none';
+            return
+        }
+
+        let _index = getRandom(watsApp_max);
+        document.getElementById(_wats_a_id_name).href = getHref(wats_url, _index, watsAppList);
+    }
+
+    runWatsApp();
+</script>
+
 </body>
 </html>
 
